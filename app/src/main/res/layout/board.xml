@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_imagewar">
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_alignTop="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/ic_launchervs" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_below="@+id/Title"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:background="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignRight="@+id/Title"
+        android:layout_alignEnd="@+id/Title"
+        android:background="@mipmap/ic_launcher" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/ic_launcherindian" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_below="@+id/button4"
+        android:layout_toLeftOf="@+id/button4"
+        android:layout_toStartOf="@+id/button4"
+        android:background="@mipmap/ic_launcherindian" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_below="@+id/button7"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/ic_launcher" />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toStartOf="@+id/button1"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/ic_launcherindian" />
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_above="@+id/button7"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:background="@mipmap/ic_launcher" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_below="@+id/Title"
+        android:layout_toLeftOf="@+id/button4"
+        android:layout_toStartOf="@+id/button4"
+        android:clickable="false"
+        android:background="@mipmap/ic_launcherindian" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        style="@style/Base.Animation.AppCompat.DropDownUp"
+        android:text="Reset"
+        android:textColor="#de0101"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Town Ain't Big Enough For The Two Of You!"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button8"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8"
+        android:textColor="#030303" />
+
+
+
+</RelativeLayout>
