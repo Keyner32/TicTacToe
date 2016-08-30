@@ -5,6 +5,8 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -13,7 +15,7 @@ import android.widget.Toast;
  */
 public class board extends AppCompatActivity implements View.OnClickListener {
 
-
+    Animation animation = null;
 
     boolean there_is_a_survivor = false;
 
@@ -30,7 +32,7 @@ public class board extends AppCompatActivity implements View.OnClickListener {
 
         //this links up my Buttons to the buttons in my layout file
 
-        Button resetButton = (Button) findViewById(R.id.resetButton);
+        final Button resetButton = (Button) findViewById(R.id.resetButton);
 
 
         button1 = (Button) findViewById(R.id.button1);
@@ -55,6 +57,8 @@ public class board extends AppCompatActivity implements View.OnClickListener {
 
         resetButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
+
                 resetgame();
             }
         });
@@ -150,7 +154,26 @@ public class board extends AppCompatActivity implements View.OnClickListener {
 
     public void resetgame(){
 
+
         there_is_a_survivor = false;
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button1.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button2.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button3.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button4.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button5.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button6.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button7.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button8.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        button9.startAnimation(animation);
 
         button1.setText("");
         button2.setText("");
@@ -173,6 +196,9 @@ public class board extends AppCompatActivity implements View.OnClickListener {
         button9.setClickable(true);
 
         turn_count=0;
+
+
+
     }
 
 
